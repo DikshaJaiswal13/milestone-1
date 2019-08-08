@@ -1,42 +1,3 @@
-<%-- <%@ page language="java" contentType="text/html; charset=UTF-8"
- import="java.util.*,com.example.stockspring.model.Company"    pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
-<%
-List companyList=(List)request.getAttribute("companyList");
-System.out.println(companyList);
-%>
-
-
-<table>
-<tr>
-<td>id<td>
-<td>Board of Directory</td>
-</tr>
-
-<% for(int i=0;i<companyList.size();i++){
-	Company e=(Company)companyList.get(i);
-	%>
-<tr>
-<td><%= e.getCompanyId() %><td>
-<td><%= e.getBoardOfDirectors() %></td>
-</tr>
-<% }%>
-
-</table>
-
-
-</table>
-
-</body>
-</html> --%>
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
  import="java.util.*,com.example.stockspring.model.Company"    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -145,59 +106,6 @@ System.out.println(companyList);
 </tr>
 <% }%>
 
-
-
-
-
-
-<!-- <tbody id="myTable">
- <tr>
-  <td>Raj</td>
-  <td>Girish</td>
-  <td>Parmar</td>
-  <td><button onclick="myFuncion()" type="submit" class="btn btn-primary">Edit</button> &nbsp;  &nbsp;  &nbsp;
-  <button onclick="myFuncion()" type="submit" class="btn btn-danger">Delete</button> </td>
- </tr>
- <tr>
-  <td>Mohan</td>
-  <td>viraj</td>
-  <td>koli</td>
-  <td><button onclick="myFuncion()" type="submit" class="btn btn-primary">Edit</button> 
-  &nbsp;  &nbsp;  &nbsp;
-  <button onclick="myFuncion()" type="submit" class="btn btn-danger">Delete</button> </td>
- </tr>
- <tr>
-  <td>Jainish</td>
-  <td>ratan</td>
-  <td>vyas</td>
-  <td><button onclick="myFuncion()" type="submit" class="btn btn-primary">Edit</button>
-   &nbsp;  &nbsp;  &nbsp;
-  <button onclick="myFuncion()" type="submit" class="btn btn-danger">Delete</button> </td>
- </tr>
- <tr>
-  <td>Tom</td>
-  <td>kim</td>
-  <td>zone</td>
-  <td><button onclick="myFuncion()" type="submit" class="btn btn-primary">Edit</button> 
-  &nbsp;  &nbsp;  &nbsp;
-  <button onclick="myFuncion()" type="submit" class="btn btn-danger">Delete</button> </td>
- </tr>
- <tr>
-  <td>Rohan</td>
-  <td>Prithvi</td>
-  <td>koli</td>
-  <td><button onclick="myFuncion()" type="submit" class="btn btn-primary">Edit</button> 
-  &nbsp;  &nbsp;  &nbsp;
-  <button onclick="myFuncion()" type="submit" class="btn btn-danger">Delete</button> </td>
- </tr>
- <tr>
-  <td>Vikram</td>
-  <td>Girish</td>
-  <td>vyas</td>
-  <td><button onclick="myFuncion()" type="submit" class="btn btn-primary">Edit</button> 
-  &nbsp;  &nbsp;  &nbsp;
-  <button onclick="myFuncion()" type="submit" class="btn btn-danger">Delete</button> </td>
- </tr> -->
 </tbody>
 </table>
  
